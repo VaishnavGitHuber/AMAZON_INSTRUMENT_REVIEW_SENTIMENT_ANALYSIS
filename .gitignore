@@ -169,3 +169,46 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Virtual environment folders
+myvenv/
+venv/
+env/
+.venv/
+
+# Anaconda project folder
+anaconda_project/
+
+# Jupyter Notebook checkpoints
+.pynb_checkpoints/
+
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Python-specific files
+*.log
+*.pot
+*.mo
+
+# Other potential files to ignore
+*.sqlite3
+*.db
+*.bak
+*.swp
+
