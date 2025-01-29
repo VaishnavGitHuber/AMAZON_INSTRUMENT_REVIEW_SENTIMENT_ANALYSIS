@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1e1e2e;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: #2a2a3c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 50%;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: #00ffcc;
+        }
+        
+        textarea {
+            width: 90%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #00ffcc;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: #00ffcc;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+        background-color: #2a2a3c;
+        color: white;
+        padding: 20px 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #00ffcc;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: {{ color }};
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <h1>💬 Sentiment Analysis</h1>
+        <form method="post">
+            <textarea name="review" placeholder="Enter your review..." required>{{ review }}</textarea><br>
+            <button type="submit">Analyze</button>
+        </form>
+        
+        {% if sentiment %}
+            <p class="result">{{ sentiment }}</p>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>Developed by Vaishnav Krishna P | Final Project for the Internship at Teachnook</p>
+        <p>Student at Presidency University</p>
+        <p>Contact: <a href="tel:+919744065221" style="color: #00ffcc;">9744065221</a></p>
+        <p>Email: <a href="mailto:vyshnavkrishnap2020@gmail.com" style="color: #00ffcc;">vyshnavkrishnap2020@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
