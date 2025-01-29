@@ -1,5 +1,5 @@
 # Amazon Instrument Review Sentiment Analysis
-
+![image of positive sentiment](postive_review.png)
 ## Project Overview
 This project is a sentiment analysis tool designed to evaluate the sentiment of Amazon product reviews. The tool uses a **Support Vector Classifier (SVC)** model trained with a **TF-IDF vectorizer** to classify reviews as **positive**, **neutral**, or **negative**. It provides a simple web interface where users can input a review and get an immediate sentiment analysis result.
 
